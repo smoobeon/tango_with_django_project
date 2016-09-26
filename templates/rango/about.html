@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>About</title>
+    </head>
+    <body>
+        <h1>I am Simon!</h1>
+        <div>
+            <br>My age is: {{ age }}<br>My address is: {{ address }}<br>
+            <img src="{% static "images/me.jpg" %}" alt="A picture of me!" />
+        </div>
+        <div>
+            <a href='/rango/'>Back!</a>
+        </div>
+    </body>
+</html>

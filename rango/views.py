@@ -6,4 +6,7 @@ def index(request):
     return render(request, 'rango/index.html',context=context_dict)
 
 def about(request):
-    return HttpResponse("I'm Simon!<br><a href='/rango/'>Back!</a>")
+    my_age = 25
+    my_address = 'Flurstrasse 36'
+    context_dict = {'age': my_age, 'address': my_address}
+    return render(request, 'rango/about.html', context=context_dict)
